@@ -1,0 +1,20 @@
+{
+  "name": "core-backend-seguranca",
+  "version": "1.0.0",
+  "description": "Core backend de segurança multi-tenant para integração com aplicações SaaS (Supabase)",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

@@ -1,0 +1,4 @@
+-- Tabelas do core (Supabase)
+-- Rode UM ARQUIVO DE CADA VEZ no SQL Editor:
+--   1º: 001_webhook_events.sql
+--   2º: 002_audit_logs.sql
