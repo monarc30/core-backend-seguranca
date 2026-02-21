@@ -2,12 +2,7 @@
 
 Backend intermediário reutilizável para integração com aplicações SaaS que usam Supabase. Garante isolamento por `account_id`, validação de token, webhooks seguros com idempotência e auditoria.
 
-**Disponível em duas versões:**
-
-- **Node.js** (esta pasta): `npm install` e `npm start` — ver abaixo.
-- **PHP (sem framework):** pasta `php/` — ver [php/README.md](php/README.md).
-
-## Requisitos (versão Node)
+## Requisitos
 
 - Node.js 20+
 - Projeto(s) Supabase (PostgreSQL)

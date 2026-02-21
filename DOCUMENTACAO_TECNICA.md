@@ -39,9 +39,9 @@ Base URL: a definida no deploy (ex.: `https://api.seudominio.com` ou `https://se
 | `JWT_ISSUER` | Não | Issuer esperado no token (default: `supabase`). |
 | `STRIPE_WEBHOOK_SECRET` | Para webhook | Valor `whsec_...` do endpoint de webhook no Dashboard Stripe. |
 | `AUDIT_LOG_ENABLED` | Não | `true` ou `false` (default: true). Desativa gravação em `audit_logs` se `false`. |
-| `PORT` | Não | Porta do servidor (Node; default: 3000). PHP usa a do servidor web. |
+| `PORT` | Não | Porta do servidor (default: 3000) |
 
-Arquivos de exemplo: raiz do projeto (Node) e `php/.env.example` (PHP). Nunca commitar arquivos `.env` com valores reais.
+Arquivo de exemplo: `.env.example` na raiz do projeto. Nunca commitar `.env` com valores reais.
 
 ---
 
@@ -70,17 +70,6 @@ cp .env.example .env
 npm run dev   # desenvolvimento
 npm start     # produção
 ```
-
-### PHP
-
-```bash
-cd php
-composer install
-cp .env.example .env
-# Editar .env com as variáveis da seção 3
-```
-
-Configurar o servidor web com document root em `php/public/`. Apache: habilitar `mod_rewrite`; o `.htaccess` encaminha para `index.php`.
 
 ### Supabase (cada um dos 3 projetos)
 
